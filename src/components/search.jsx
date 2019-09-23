@@ -24,7 +24,7 @@ export default function header({value,onChange,onSubmit,title,subtitle,keyword,e
                        
                         value={value}
                         onChange={onChange}
-                        type="email" placeholder="EMAIL" />
+                        type="text" placeholder="EMAIL" />
                      </div>
                      {errors && <p className="errors">{errors}</p>}
                      

@@ -173,14 +173,14 @@ line-height: 26px;
   color: #999999;
   letter-spacing: 0;
   line-height: 20px;
- /*  width: 960px;
-  height: 40px; */
   margin-left: 100px; 
+}
+.container-fluid{
+  position: relative;
+  bottom: 0;
 }
 
 .about{
-  /* height: 17px;
-  width: 103px; */
   text-align: center;
 }
 .link{
@@ -279,3 +279,12 @@ button{
   min-width: 100%;
    max-width:180px; 
 }
+.not-founded{
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  }

@@ -43,8 +43,7 @@ import { getEmails,searchEmail } from './services/services';
     
     onChange = e =>{
       this.setState({ query: e.target.value });
-      //this.setState({query})
-      
+ 
      }
           
   render() {
@@ -54,12 +53,8 @@ import { getEmails,searchEmail } from './services/services';
       <Navbar/>
       <Switch>
       <Route path="/" exact  render={ () => ( <Index  onSubmit={this.onSubmit} onChange={this.onChange} query={query} errors={errors} />)}/> 
-      
-      <Route path="/report" 
-     render={props => {
-       if(email===0) return <Redirect to="/" />
-        return <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors}/>
-     }}></Route>
+      <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors}/>)}/> 
+     
      
   
       </Switch>
@@ -71,5 +66,3 @@ import { getEmails,searchEmail } from './services/services';
 
 export default withRouter(App);
 
-{/* <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors}/>)}/> 
- */}
