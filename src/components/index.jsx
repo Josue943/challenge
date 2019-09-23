@@ -20,30 +20,30 @@ state={
                     <React.Fragment>
                          <Search value={query} onChange={onChange}  onSubmit={onSubmit} title={title} subtitle={subtitle} keyword={keyword} errors={errors}/>
 
-                            <div className="container">
+                        <div className="container">
                                <div className="row">
                                
 
-                                <div className="col-md-12">
-                                <h1 className="reverse">Reverse Email Lookup</h1>
-                                </div>
+                                    <div className="col-md-12">
+                                        <h1 className="reverse">Reverse Email Lookup</h1>
+                                    </div>
 
-                                <div className="col-md-10">
-                                <h3 className="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                    tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                                    aliquip ex ea commodo consequat.</h3>
-                                </div>
+                                    <div className="col-md-10">
+                                        <h3 className="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                            tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                            aliquip ex ea commodo consequat.</h3>
+                                    </div>
                           </div>   
                           <div className="row division">
 
                                 {list.map(item =>(
                                 <Colums item={item} key={item}/>
                                 ))}
-                                </div>
+                        </div>
 
-                                </div>  
-                                <hr/> 
+                        </div>  
+                        <hr/> 
                                     
                     </React.Fragment>
                           )

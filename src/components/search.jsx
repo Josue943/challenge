@@ -14,37 +14,37 @@ export default function header({value,onChange,onSubmit,title,subtitle,keyword,e
                 </div>
                    
                 <div className="mt-4">
-                    <form  onSubmit={onSubmit} >  
-                    
-                  
+                 <form  onSubmit={onSubmit} >  
                     <div className="col-12 form-row align-items-center">
                         <div className="col-md-8 col-sm-12">
                             <input 
                                 className={!errors ? 'form-control':'form-control invalid'}
-                            
+                                autoFocus
                                 value={value}
                                 onChange={onChange}
                                 type="text" placeholder="EMAIL" />
                         </div>
-                     {errors && <p className="errors">{errors}</p>}
+                   {errors && <p className="errors">{errors}</p>}
+                    
+                        <div className="col-md-4 col-sm-12">
+                            <button className="send"><span className="inside">Go!</span></button>
+                        </div> 
                      
-                    <div className="col-md-4 col-sm-12">
-                        <button className="send"><span className="inside">Go!</span></button>
-                    </div> 
-
-               
                     </div>
-
                  </form> 
-                
                 </div>
-               
+                    
                 <div className="row mt-3">
-                        <img className="lock" src={lock} width="15" height="19" alt="Lock"/><h6 className="message">Enter Any Email Address. They won't be notified.</h6> 
+                    <div className="col-12">
+                        <div className="row"> 
+               <div className="col-1"><img className="lock" src={lock} width="15" height="19" alt="Lock"/></div> 
+               <div className="col-11"><h6 className="message">Enter Any Email Address. They won't be notified.</h6></div>
+                     </div>
                     </div>
-                </div> 
-                
-            </header>         
+                           
+                </div>
+            </div>
+         </header>                  
                   
     )
 

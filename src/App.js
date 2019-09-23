@@ -31,6 +31,7 @@ import { getEmails,searchEmail } from './services/services';
       this.setState({query:''})
       this.setState({errors:''})
       this.setState({email}) 
+      this.scroll()
       this.props.history.push('/report') 
     }else{
        const errors = 'Please add a valid email address'
@@ -42,6 +43,10 @@ import { getEmails,searchEmail } from './services/services';
       this.setState({ query: e.target.value });
     }
      
+    scroll = ()=>{
+      const elemento = document.querySelector('nav');
+      elemento.scrollIntoView('smooth','start')
+    }
           
   render() {
    const {query,email,errors} = this.state
@@ -50,7 +55,7 @@ import { getEmails,searchEmail } from './services/services';
       <Navbar/>
       <Switch>
       <Route path="/" exact  render={ () => ( <Index  onSubmit={this.onSubmit} onChange={this.onChange} query={query} errors={errors} />)}/> 
-      <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors}/>)}/> 
+      <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors} scroll={this.scroll} />)}/> 
       </Switch>
       <Footer/>
     </React.Fragment>

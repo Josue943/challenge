@@ -4,7 +4,9 @@ import Card from './card';
 import Search from './search';
 import Error from './error'
  export default class report extends Component {
-   
+      componentDidMount(){
+         this.props.scroll()
+     } 
     render() {
         const {query,onChange,onSubmit,email,errors} = this.props;
         const title ='Can’t Find The Right Person?';
@@ -15,7 +17,7 @@ import Error from './error'
             return(
                <React.Fragment>
                     <Error />
-                    <Search value={query} onChange={onChange}  onSubmit={onSubmit} title={title} subtitle={subtitle} keyword={keyword}  />
+                    <Search value={query} onChange={onChange}  onSubmit={onSubmit} title={title} subtitle={subtitle} keyword={keyword} errors={errors} />
                </React.Fragment>
             )
 
@@ -38,11 +40,11 @@ import Error from './error'
                 )
            
             }
-            
+        }
+    }     
         
    
-         }
-     } 
+    
      
    
   

@@ -106,8 +106,7 @@ input{
   font-size: 16px;
   color: #F6BC25;
   letter-spacing: 0;
-  width:371px;
-  height:19px;
+
   margin-left: 20px;
   
  }
@@ -136,7 +135,7 @@ input{
 
  .circle{
   width: 90px;
-  height: 90px;
+  height: 90px; 
   background: #004A80;
   border-radius: 50%;
   font-family: HelveticaNeue-Bold;

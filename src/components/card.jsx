@@ -9,7 +9,7 @@ export default function card({contact}) {
                             <img className="inside-box" src={person} alt="person" width="40" height="45"/>
                         </div>
                         <div className="col-10 ">
-                            <div className="col-6 ">
+                            <div className="col-12">
                                 <h2 className="name">{contact.name}</h2>
                             </div>
 
