@@ -14,22 +14,22 @@ export default function header({value,onChange,onSubmit,title,subtitle,keyword,e
                 </div>
                    
                 <div className="mt-4">
-                <form  onSubmit={onSubmit} >  
+                    <form  onSubmit={onSubmit} >  
                     
                   
                     <div className="col-12 form-row align-items-center">
-                   <div className="col-md-8 col-sm-12">
-                   <input 
-                       className={!errors ? 'form-control':'form-control invalid'}
-                       
-                        value={value}
-                        onChange={onChange}
-                        type="text" placeholder="EMAIL" />
-                     </div>
+                        <div className="col-md-8 col-sm-12">
+                            <input 
+                                className={!errors ? 'form-control':'form-control invalid'}
+                            
+                                value={value}
+                                onChange={onChange}
+                                type="text" placeholder="EMAIL" />
+                        </div>
                      {errors && <p className="errors">{errors}</p>}
                      
                     <div className="col-md-4 col-sm-12">
-                    <button className="send"><span className="inside">Go!</span></button>
+                        <button className="send"><span className="inside">Go!</span></button>
                     </div> 
 
                

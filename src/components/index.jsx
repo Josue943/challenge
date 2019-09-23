@@ -45,10 +45,10 @@ state={
                                 </div>  
                                 <hr/> 
                                     
-                         </React.Fragment>
-                                )
-                             }
-                        }      
+                    </React.Fragment>
+                          )
+                      }
+                 }      
                            
                            
                             

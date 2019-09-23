@@ -89,14 +89,13 @@ export default function card({contact}) {
                             
                             </div>
 
-
-
-
-
-                        </div>        
-
-
-                    </div>
-                </div>
+                            </div>        
+                            
+                         </div>
+              </div>
     )
 }
+
+
+
+

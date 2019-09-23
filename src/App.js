@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 //router
-import {Route,Redirect,Switch,withRouter} from 'react-router-dom'
+import {Route,Switch,withRouter} from 'react-router-dom'
 //components
 import Index from './components/index'
 import Report from './components/report'
@@ -36,15 +36,15 @@ import { getEmails,searchEmail } from './services/services';
        const errors = 'Please add a valid email address'
        this.setState({errors})
    }
-    
+  } 
     
 
-    } 
+   
     
     onChange = e =>{
       this.setState({ query: e.target.value });
- 
-     }
+    }
+     
           
   render() {
    const {query,email,errors} = this.state
@@ -54,9 +54,6 @@ import { getEmails,searchEmail } from './services/services';
       <Switch>
       <Route path="/" exact  render={ () => ( <Index  onSubmit={this.onSubmit} onChange={this.onChange} query={query} errors={errors} />)}/> 
       <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors}/>)}/> 
-     
-     
-  
       </Switch>
       <Footer/>
     </React.Fragment>
