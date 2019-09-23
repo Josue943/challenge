@@ -37,10 +37,7 @@ import { getEmails,searchEmail } from './services/services';
        this.setState({errors})
    }
   } 
-    
-
-   
-    
+  
     onChange = e =>{
       this.setState({ query: e.target.value });
     }
