@@ -134,8 +134,10 @@ input{
 
 
  .circle{
-  width: 90px;
-  height: 90px; 
+  max-width: 90px;
+  max-height: 90px; 
+  min-height:48px;
+  min-width:48px;
   background: #004A80;
   border-radius: 50%;
   font-family: HelveticaNeue-Bold;
