@@ -97,18 +97,12 @@ input{
     text-align: center;
   }
   
-  .lock{
-    margin-left: 20px;
-  }
 
  .message{
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
   color: #F6BC25;
   letter-spacing: 0;
-
-  margin-left: 20px;
-  
  }
 
  /*mid*/
@@ -144,8 +138,7 @@ input{
   font-size: 48px;
   color: #F6BC25;
   letter-spacing: 0;
-  text-align: center;
-
+  text-align: center; 
 
  }
  
@@ -274,6 +267,8 @@ border-radius: 30px;
   left:20px;
 }
 
+
+
 button{
   max-height: 70px;
   max-height: 50px;
@@ -288,4 +283,10 @@ button{
   border-radius: 30px;
   border-radius: 30px;
   margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .circle2 {
+      display: none;
+    }
   }
