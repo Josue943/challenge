@@ -22,14 +22,14 @@ import { getEmails,searchEmail } from './services/services';
   componentDidMount(){
     const data =  getEmails();
     this.setState({data})
-    } 
+  } 
 
    onSubmit= e =>{
     e.preventDefault();
     const email = searchEmail(this.state.query)
+   /*  localStorage.setItem('email',this.state.query) */
     if(email){
-      this.setState({query:''})
-      this.setState({errors:''})
+      this.setState({query:'',errors:''})
       this.setState({email}) 
       this.scroll()
       this.props.history.push('/report') 
@@ -37,6 +37,7 @@ import { getEmails,searchEmail } from './services/services';
        const errors = 'Please add a valid email address'
        this.setState({errors})
    }
+  
   } 
   
     onChange = e =>{
@@ -52,12 +53,12 @@ import { getEmails,searchEmail } from './services/services';
    const {query,email,errors} = this.state
     return (
       <React.Fragment>
-      <Navbar/>
-      <Switch>
-      <Route path="/" exact  render={ () => ( <Index  onSubmit={this.onSubmit} onChange={this.onChange} query={query} errors={errors} />)}/> 
-      <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors} scroll={this.scroll} />)}/> 
-      </Switch>
-      <Footer/>
+        <Navbar/>
+        <Switch>
+          <Route path="/" exact  render={ () => ( <Index  onSubmit={this.onSubmit} onChange={this.onChange} query={query} errors={errors} />)}/> 
+          <Route path="/report" render={ () =>( <Report onSubmit={this.onSubmit} onChange={this.onChange} query={query} email={email} errors={errors} scroll={this.scroll} />)}/> 
+        </Switch>
+        <Footer/>
     </React.Fragment>
     )
   }

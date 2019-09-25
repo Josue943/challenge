@@ -2,9 +2,9 @@ import {data} from './data.json'
 
 
 export function getEmails() {
-    return data;
-  }
+  return data;
+}
 
-export function searchEmail(email){
-    return data.find(e =>e.email === email );
+export function searchEmail(email) {
+  return data.find(e => e.email === email);
 }
