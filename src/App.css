@@ -12,7 +12,7 @@
 header {
   background: #004A80;
   padding-top: 5px;
-  padding-bottom: 45px;
+  padding-bottom: 55px;
 
 }
 
@@ -118,6 +118,7 @@ input {
 
 .reverse {
   color: #004A80;
+  margin-top: 20px;
 
 }
 
@@ -205,7 +206,8 @@ input {
 
 /* result */
 .report {
-  padding-bottom: 15px;
+  padding-bottom: 60px;
+  padding-top: 25px;
 }
 
 .result {
@@ -401,9 +403,13 @@ button {
     height: 50px;
   }
 
+  .about {
+    margin-top: 10px;
+  }
+
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1100px) {
   .container-footer {
     padding-left: 0;
     margin: 25px;
@@ -442,6 +448,27 @@ button {
   }
 
   header {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+  }
+
+  .card {
+    margin-top: 15px;
+  }
+
+  .inside-box {
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+
+  .margincard {
+    margin-bottom: 10px
+  }
+
+  .report {
+    padding-bottom: 40px;
+  }
+
+  .about {
+    margin-top: 10px;
   }
 }

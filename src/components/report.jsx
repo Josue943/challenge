@@ -3,12 +3,17 @@ import React, { Component } from "react";
 import Card from "./card";
 import Search from "./search";
 import Error from "./error";
+
 export default class report extends Component {
+  
+
   componentDidMount() {
     this.props.scroll();
+   
   }
   render() {
-    const { query, onChange, onSubmit, email, errors } = this.props;
+   
+    const { query, onChange, onSubmit, email, errors,getInfo } = this.props;
     const title = "Can’t Find The Right Person?";
     const keyword = "Try Again";
     const subtitle = "Make a new search";
@@ -41,7 +46,7 @@ export default class report extends Component {
                   you’re searched for.
                 </h3>
               </div>
-              <Card contact={email} />
+               <Card  getInfo={getInfo}/> 
             </div>
           </div>
           <Search

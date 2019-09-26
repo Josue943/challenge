@@ -52,8 +52,8 @@ export default class index extends Component {
               ))}
             </div>
           </div>
-        </div>
-        <hr />
+          <hr />
+        </div>    
       </React.Fragment>
     );
   }
