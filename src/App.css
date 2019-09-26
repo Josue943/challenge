@@ -104,6 +104,7 @@ input {
   color: #004A80;
   letter-spacing: 1px;
   text-align: center;
+  height: 60px;
 }
 
 
@@ -238,8 +239,8 @@ input {
 }
 
 .circle2 {
-  width: 63px;
-  height: 63px;
+   width: 63px;
+  height: 63px; 
   background: #004A80;
   border-radius: 50%;
   font-family: HelveticaNeue-Bold;
@@ -279,6 +280,7 @@ input {
 
 .inside-box {
   padding-bottom: 20px;
+  height: 60px;
 }
 
 /*errors*/
@@ -458,6 +460,8 @@ button {
   .inside-box {
     padding-right: 15px;
     padding-bottom: 25px;
+    
+    
   }
 
   .margincard {
@@ -471,4 +475,7 @@ button {
   .about {
     margin-top: 10px;
   }
+
+  
+  
 }
