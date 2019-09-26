@@ -459,9 +459,7 @@ button {
 
   .inside-box {
     padding-right: 15px;
-    padding-bottom: 25px;
-    
-    
+    padding-bottom: 25px;  
   }
 
   .margincard {
@@ -475,7 +473,4 @@ button {
   .about {
     margin-top: 10px;
   }
-
-  
-  
 }
