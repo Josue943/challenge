@@ -17,7 +17,7 @@ export default function card({ getInfo }) {
             height="45"
           />
         </div>
-        <div className="col-10 ">
+        <div className="col-12 col-md-10">
           <div className="col-12">
             <h2 className="name">{name}</h2>
           </div>
