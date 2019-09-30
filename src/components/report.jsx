@@ -37,7 +37,7 @@ export default class report extends Component {
         <React.Fragment>
           <div className="container report">
             <div className="row">
-              <div className="col-12">
+              <div className="col-10 col-md-12">
                 <h1 className="result">Result</h1>
               </div>
               <div className="col-12">

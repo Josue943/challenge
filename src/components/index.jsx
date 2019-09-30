@@ -30,11 +30,11 @@ export default class index extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 col-12">
               <h1 className="reverse">Reverse Email Lookup</h1>
             </div>
 
-            <div className="col-md-12">
+            <div className="col-md-10 col-12">
               <h3 className="intro">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

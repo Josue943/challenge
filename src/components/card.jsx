@@ -6,7 +6,7 @@ export default function card({ getInfo }) {
     const data = getInfo(em)
     const {name,notes,address,phoneNumbers,relatives,email} = data
   return (
-    <div className="col-12 card">
+    <div className="col-11 col-md-12 card">
       <div className="row margincard">
         <div className="col-md-1 circle2">
           <img

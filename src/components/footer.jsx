@@ -13,7 +13,7 @@ export default function footer() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="about col-md-4 col-sm-12 col-lg-2">
+          <div className="about col-md-2 col-sm-12 col-lg-2">
             <a className="link" href="/">
               Terms|
             </a>

@@ -14,15 +14,15 @@ export default function header({
     <header>
       <div className="container mt-4">
         <div className="row">
-          <h1 className="main col-12">{title}</h1>
-          <h2 className="subtitle col-12">
+          <h1 className="main col-11 col-md-12">{title}</h1>
+          <h2 className="subtitle col-11">
             <span className="yellow">{keyword}</span> - {subtitle}
           </h2>
         </div>
         <div className="mt-4">
           <form onSubmit={onSubmit}>
             <div className="col-12 form-row align-items-center">
-              <div className="col-md-8 col-sm-12">
+              <div className="col-md-9 col-sm-12  col-12">
                 <input
                   className={!errors ? "form-control" : "form-control invalid"}
                   value={value}
@@ -32,7 +32,7 @@ export default function header({
                 />
               </div>
               {errors && <p className="errors">{errors}</p>}
-              <div className="col-md-4 col-sm-12">
+              <div className="col-md-3 col-lg-2 col-sm-12">
                 <button className="send">
                   <span className="inside">Go!</span>
                 </button>
